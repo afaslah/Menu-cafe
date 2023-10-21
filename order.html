@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="order.css" rel="stylesheet">
     <title>Order</title>
 </head>
+
 <body>
     <div class="heading">
         <h1>DeepSenja's Cafe</h1>
-            <h3>&mdash; ORDER &mdash; </h3>
+        <h3>&mdash; ORDER &mdash; </h3>
     </div>
-
+    <div class="main">
+        <h1>Place Your Order Here!</h1>
+        <form action="javascript:void(0);">
+            <fieldset>
+                <legend>
+                    <div class="number">1</div> Your Info:
+                </legend>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="user_name"><br>
+                <label for="mail">Email:</label><br>
+                <input type="email" id="mail" name="user_email"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="user_tel"><br>
+                <label for="address">Address:</label><br>
+                <textarea></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <div class="number">2</div> Food Choice:
+                </legend>
+                <input type="checkbox" id="glutenfree" name="glutenfree"><label>Croissant</label><br>
+                <input type="checkbox" id="glutenfree" name="glutenfree"><label>French Fries</label><br>
+                <input type="checkbox" id="glutenfree" name="glutenfree"><label>Pizza</label><br>
+                <input type="checkbox" id="glutenfree" name="glutenfree"><label>Pancakes</label>
+                <br><input type="checkbox" id="glutenfree" name="glutenfree"><label>Cheesecake</label><br>
+                <input type="checkbox" id="glutenfree" name="glutenfree"><label>Chocolate Cake</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <div class="number">3</div> Drinks Choice:
+                </legend>
+                <input type="checkbox" id="glutenfree" name="glutenfree"><label>Iced Tea</label><br>
+                <input type="checkbox" id="glutenfree" name="glutenfree"><label>Hot Tea</label><br>
+                <input type="checkbox" id="glutenfree" name="glutenfree"><label>Americano</label><br>
+                <input type="checkbox" id="glutenfree" name="glutenfree"><label>Milkshake</label><br>
+                <input type="checkbox" id="glutenfree" name="glutenfree"><label>Latte</label><br>
+                <input type="checkbox" id="glutenfree" name="glutenfree"><label>Fruit Juice</label><br>
+                <input type="checkbox" id="glutenfree" name="glutenfree"><label>Soda</label><br>
+            </fieldset>
+           
+            <fieldset>
+                <legend>
+                    <div class="number">4</div> Any Allergies/Special Requests:
+                </legend>
+                <textarea></textarea>
+            </fieldset>
+            <input class="button" type="submit" value="Order Now">
+        </form>
+    </div>
 </body>
+
 </html>
